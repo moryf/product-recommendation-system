@@ -1,0 +1,66 @@
+# Customer Data Analysis and Product Recommendation System
+
+Customer Analysis and Product Recommendation System
+
+## Description
+
+This project is a Flask-based web application that provides various endpoints for customer analysis and product recommendations. It includes functionalities to analyze customer spending, identify best-selling products and categories, cluster customers based on their spending habits, and recommend products to customers based on their purchase history.
+
+## Features
+
+- **Average Spending per Customer**: Provides the average spending per customer.
+- **Best Selling Products**: Lists the best-selling products.
+- **Best Selling Categories**: Lists the best-selling categories.
+- **Cluster Statistics**: Provides statistics for different customer clusters.
+- **Product Recommendations**: Recommends products to customers based on their purchase history.
+
+## Endpoints
+
+- `GET /avg-customer`: Returns the average spending per customer.
+- `GET /best-selling-products`: Returns the best-selling products.
+- `GET /best-selling-categories`: Returns the best-selling categories.
+- `GET /cluster_stats`: Returns cluster statistics.
+- `GET /recommend-products/<customer_id>`: Recommends products for a given customer.
+
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone <repository_url>
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd <project_directory>
+    ```
+3. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. Start the Flask application:
+    ```sh
+    python api.py
+    ```
+2. Access the endpoints using a web browser or API client (e.g., Postman).
+
+## Data
+
+- The project uses various JSON files to store data:
+  - `data/average_spending_per_customer.json`
+  - `data/best_selling_products.json`
+  - `data/best_selling_categories.json`
+  - `data/cluster_stats.json`
+
+## Analysis
+
+The `analysis.py` script performs the following tasks:
+
+- Reads and processes the sample dataset.
+- Identifies best-selling products and categories.
+- Calculates average spending per customer.
+- Clusters customers based on their spending and purchase frequency.
+- Recommends products to customers using collaborative filtering.
+- Generates plots and saves them as PNG files.
+- Creates a PDF report containing the analysis results.
