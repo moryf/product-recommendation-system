@@ -26,11 +26,11 @@ This project is a Flask-based web application that provides various endpoints fo
 
 1. Clone the repository:
     ```sh
-    git clone <repository_url>
+    git clone https://github.com/moryf/product-recommendation-system.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd <project_directory>
+    cd /dataanalysis
     ```
 3. Install the required dependencies:
     ```sh
